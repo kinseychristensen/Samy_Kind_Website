@@ -7,7 +7,7 @@
 
 <div v-for="book in bookData" v-bind:key="book.bookOrder" :value="book.bookOrder">
     <div v-if="currentBook == book.bookOrder">
-    Cover: {{ book.bookCover }}
+    Cover: {{ book.bookCover }} <img :src="book.bookCover">
     {{ book.bookTitle }}
     Synopsis: {{ book.description }}
     Amazon Link: {{ book.amazonLink }}
@@ -18,19 +18,21 @@
         {{ review.review }}
         <p> - {{ review.reviewer }}</p>
     </div>
-    <SendMessage/>
+    <SendReview :bookTitle="book.bookTitle"/>
 </div>
 </div>
  
 
 </template>
 <script>
-import SendMessage from './SendMessage.vue';
+
 import {bookData} from '../BooksData.js';
+import SendReview from './SendReview.vue';
 
 export default {
     components: {
-        SendMessage,
+  
+        SendReview,
     },
     data() {
         return {

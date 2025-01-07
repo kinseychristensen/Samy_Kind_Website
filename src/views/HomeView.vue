@@ -7,6 +7,7 @@
     <h1>this is the home page</h1>
 
     <div>
+      <img :src="samyPic"/>
       Hello. My name is Samy Kind and this is my sister, Lucy. We are the first main characters that Mr. Nate ever 
       created since he was a child. I would like to introduce you to my friends on this website. They have many 
       fun activities that show you what's so great about this website. Meet my friends by clicking on the posters 
@@ -16,3 +17,12 @@
     </div>
   </main>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      samyPic: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285876/samy_avatar_ciepz3.png',
+    }
+  }
+}
+</script>

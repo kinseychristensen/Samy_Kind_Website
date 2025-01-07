@@ -7,3 +7,26 @@
   font-weight: normal;
 }
 
+.nav-img {
+  max-height: 150px;
+  width: auto;
+}
+
+h1{
+  color: #fd0100
+}
+h2{
+  color: #0119fe
+}
+nav{
+  display:flexbox;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  max-width: 100vw;
+}
+.nav-link {
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: antiquewhite;
+}

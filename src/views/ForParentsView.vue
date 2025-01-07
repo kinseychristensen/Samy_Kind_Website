@@ -2,6 +2,7 @@
     <div >
       <h1>This is the parents page</h1>
       <p>
+        <img :src="rosellaPic"/>
         “Hi. My name is Rosella Blossum. I'm one of Samy's friends. I like planting flowers and sharing
         some of the flowers with others. Right now, I would like to share with the parents and teachers 
         about helping kids become engaged in the Samy Kind books. We have coloring pages that children 
@@ -13,4 +14,12 @@
       This area is currently under construction!  Check back again soon.
     </div>
   </template>
-  
+   <script>
+   export default {
+     data(){
+       return {
+         rosellaPic: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285903/Rosella_Avatar_s5nzt0.png',
+       }
+     }
+   }
+   </script>

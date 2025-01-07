@@ -1,7 +1,7 @@
 export const bookData= [
     {
         bookOrder: 1,
-        bookCover: '',
+        bookCover: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285903/Screenshot_2025-01-07_at_2.02.46_PM_hfurab.png',
         amazonLink: '',
         bookTitle: 'The Kind Family',
         description: 'This book is about the importance of family, and the hero is six-year-old Samy Kind. He is a boy who shows kindness to lots of people, but can he continue to be kind when he faces a major tragedy? Is being Kind more than a name? Samy travels through the stages of grief as he tires to deal with perhaps the most major change any child can face.',
@@ -24,7 +24,7 @@ export const bookData= [
 
     {
         bookOrder: 2,
-        bookCover: '',
+        bookCover: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285903/Screenshot_2025-01-07_at_2.03.10_PM_jrom7r.png',
         amazonLink: '',
         bookTitle: 'Unconditional Love',
         description: 'This book is about how Samy Kind learns that love doesn’t have to be used in a way that other people expect nor does it have to be used on a crush that they might have. He learns that love can be involved with kindness as well, even if others don’t agree. Maybe the best place to really learn about love is right at home, with your family.',
@@ -48,7 +48,7 @@ export const bookData= [
 
     {
         bookOrder: 3,
-        bookCover: '',
+        bookCover: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285904/Screenshot_2025-01-07_at_2.02.14_PM_csvuvm.png',
         amazonLink: '',
         bookTitle: 'Special Orange Glasses',
         description: 'This book is about Samy and his friends meeting an autistic boy named Evan Smith. They try to cope with him, but have a hard time understanding him at first. Some of this story is based on Mr. Nate’s experiences as a child with autism, but it will be considered fiction, because the hero is Evan Smith and he will be in a pretend world.',
@@ -72,7 +72,7 @@ export const bookData= [
 
     {
         bookOrder: 4,
-        bookCover: '',
+        bookCover: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285903/Screenshot_2025-01-07_at_2.03.31_PM_rntz8y.png',
         amazonLink: '',
         bookTitle: 'The Kindness Camp',
         description: 'This book is about Samy and his friends forming a club for showing kindness to others. They end up going on a summer camping trip where they learn to not only show kindness to other people, but they also show it to animals as well.',

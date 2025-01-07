@@ -2,7 +2,7 @@
     <div >
       <h1>This is the read-aloud page</h1>
       <div>
-
+        <img :src="flickerPic"/>
         Hi there. I'm Flicker Dragon, one of Samy's best friends. I like fire and heat, but I like it in careful ways, just 
         the way I like being confident about things in careful ways too. I'm confident to tell you that Mr. Nate has his
         own YouTube channel on read-alouds for each chapter of one book at a time. He has a very fluent voice when it comes
@@ -19,9 +19,10 @@ export default {
   components: {
     readAloudGallery,
   },
-
- 
-
+  data(){
+    return {
+      flickerPic: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285876/flicker_avatar_bock5x.png',
+    }
+  }
 }
-
 </script>

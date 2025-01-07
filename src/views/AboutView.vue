@@ -2,6 +2,7 @@
   <div>
     <h1>This is an about page</h1>
     <div>
+      <img :src="spikePic"/>
      <p>Hey. I'm Spike Scarecrow, one of Samy's friends. I like scarecrows, especially making scarecrow dolls. In case you wonder why,
        I'm not afraid of anything. I'm not even nervous to introduce Mr. Nate to you. He is the author and illustrator of this 
        series. He has a lot to tell you about himself. Take it away, Mr. Nate.</p>
@@ -26,3 +27,13 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      spikePic: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736285914/spike_avatar_qocxmg.png',
+      natePic: '',
+    }
+  }
+}
+</script>
