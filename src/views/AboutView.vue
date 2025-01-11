@@ -1,6 +1,6 @@
 <template>
   <div class="page-grid">
-    <h1 class="page-title">This is an about page</h1>
+    <h1 class="page-title">About the Author: Mr Nate</h1>
       <img :src="spikePic" class="avatar page-avatar"/>
      <div class="avatar-intro">Hey. I'm Spike Scarecrow, one of Samy's friends. I like scarecrows, especially making scarecrow dolls. In case you wonder why,
        I'm not afraid of anything. I'm not even nervous to introduce Mr. Nate to you. He is the author and illustrator of this 

@@ -1,24 +1,30 @@
 <template>
+    <h2 id="books-choose">Click on a book to learn more about it!</h2>
+    <div id="cover-flex">
  <div v-for="book in bookData" v-bind:key="book.bookOrder" :value="book.bookOrder">
-<button @click="currentBook = book.bookOrder">{{book.bookTitle}}</button>
+<button @click="currentBook = book.bookOrder"><img :src="book.bookCover" id="tiny-cover"></button>
     </div>
-    ___________________________
-
+</div>
+    
 
 <div v-for="book in bookData" v-bind:key="book.bookOrder" :value="book.bookOrder">
-    <div v-if="currentBook == book.bookOrder">
-    Cover: {{ book.bookCover }} <img :src="book.bookCover">
-    {{ book.bookTitle }}
-    Synopsis: {{ book.description }}
-    Amazon Link: {{ book.amazonLink }}
+    <div v-if="currentBook == book.bookOrder" class="book-grid">
+    <img :src="book.bookCover" class="full-cover">
+    <h3 class="title-of-book">{{ book.bookTitle }}</h3>
+   <div class="synopsis"> {{ book.description }}</div>
+   <a :href="book.amazonLink" class="buy-it" >Buy the Book on Amazon!</a>
 
-    Mr Nate's Notes: {{ book.nateNotes }}
-    Reviews
-    <div v-for="review in book.reviews" :key="review.review">
-        {{ review.review }}
-        <p> - {{ review.reviewer }}</p>
+    <div class="nate-notes"><img :src="mrNatePic" class="avatar" id="about-image"/>{{ book.nateNotes }}</div>
+    <h3 class="reviews-title">Reviews</h3>
+    <div class="review-flex">
+    <div v-for="review in book.reviews" :key="review.id" class="indiv-review">
+        <p>{{ review.review }}</p>
+        <p class="reviewer"> - {{ review.reviewer }}</p></div>
     </div>
-    <SendReview :bookTitle="book.bookTitle"/>
+
+    <button @click="showReview = true" class="send-review">Write a Review</button>
+<div v-if="showReview" class="new"> <SendReview :bookTitle="book.bookTitle"/></div>
+
 </div>
 </div>
  
@@ -38,6 +44,8 @@ export default {
         return {
         bookData,
         currentBook: 0,
+        showReview: false,
+        mrNatePic: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736602055/nate_jzvk2g.png',
     }
 }
 }

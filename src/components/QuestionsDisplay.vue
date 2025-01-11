@@ -11,19 +11,25 @@
     <p id="answer-greeting">
         Hi {{ query.asker }}!</p>
     <p id="answer-message">{{ query.answer }}</p> 
-    <p id ="answer-salution"> - {{ query.answerer }}</p>  
+    <p id ="answer-salutation"> - {{ query.answerer }}</p>  
+    <img :src="characterPics[query.answerer]" class="avatar message-avatar"/>
    </div>
    </div>
 </div>
 </template>
 <script>
 import { questionData } from '@/QuestionsData';
+import { characterPics } from '@/CharacterAvatarData';
 export default {
     data(){
         return {
             questionData,
+            characterPics,
+             
+            
         }
-    }
+    },
+   
 }
 
 

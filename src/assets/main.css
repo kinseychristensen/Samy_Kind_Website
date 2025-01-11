@@ -13,6 +13,15 @@ h1{
 h2{
   color: #0119fe
 }
+button {
+  min-width: 100px;
+  min-height: 40px;
+  font-size: larger;
+  background-color:aqua;
+  border-radius: 15px;
+  border-color: antiquewhite;
+}
+
 nav{
   display:flex;
   flex-wrap: nowrap;
@@ -80,6 +89,7 @@ nav{
   margin: 0 auto;
   line-height: 1.6;
   font-size: 16px;
+  padding: 20px;
 
 }
 #about-image{
@@ -154,14 +164,165 @@ margin: auto;
 }
 
 .question{
-  background-color: bisque;
+  background-color: rgb(255, 252, 196);
   border-radius: 20px;
   margin-right: 100px;
   padding: 15px;
 }
 .answer{
-  background-color: rgb(187, 200, 224);
+  background-color: rgb(184, 221, 241);
   border-radius: 20px;
   margin-left: 100px;
   padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: 
+  "greeting avatar"
+  "message avatar"
+  "salutation avatar"
+  ;
+}
+
+#answer-greeting{
+  grid-area: greeting;
+}
+#answer-message{
+  grid-area: message;
+  margin-right: 20px;
+}
+#answer-salutation{
+  grid-area: salutation;
+  margin-left: 300px;
+}
+#question-salutation{
+  margin-left: 300px;
+}
+.message-avatar{
+  grid-area: avatar;
+  width: 190px;
+  height: auto;
+  margin: 5px;
+}
+#cover-flex button{
+  all: unset;
+}
+
+#cover-flex{
+  margin-top: 20px;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+#books-choose{
+  justify-self: center;
+}
+
+#tiny-cover{
+  max-height: 200px;
+  width: auto;
+}
+
+#tiny-cover:hover{
+  transform: scale(1.2);
+}
+.book-grid{
+  display: grid;
+  padding: 20px;
+  border-color: black;
+  background-color: lightgray;
+  border-width: 3px;
+  border-style: groove;
+  border-radius: 25px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-template-areas: 
+  "cover ."
+  "cover title"
+  "cover synopsis"
+  "cover buy-it"
+  "cover nate-notes"
+  "cover ."
+  "reviews-title reviews-title"
+  "reviews reviews"
+  "send-review send-review"
+  "new new"
+  ;
+}
+
+.full-cover{
+  grid-area: cover;
+  object-fit: contain;
+  width: 450px;
+  max-width: 50vw;
+  justify-self: center;
+}
+.title-of-book{
+  grid-area: title;
+}
+.synopsis{
+  grid-area: synopsis;
+}
+.buy-it{
+  grid-area: buy-it;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: larger;
+  background-color:aqua;
+  border-radius: 15px;
+  border-color: antiquewhite;
+}
+.buy-it:hover {
+  background-color: #0056b3;
+}
+
+.nate-notes{
+  grid-area: nate-notes;
+}
+.reviews-title{
+  grid-area: reviews-title;
+  margin: auto;
+  color: #0119fe;
+  font-size: larger;
+}
+.review-flex{
+  grid-area: reviews;
+  display: flexbox;
+  flex-direction: column;
+}
+.send-review{
+  grid-area: send-review;
+}
+
+.new{
+  grid-area: new;
+}
+.indiv-review{
+  background-color: burlywood;
+ padding: 15px;
+ margin: 5px;
+ border-radius: 25px;
+}
+.reviewer{
+  margin-left: 300px;
+}
+
+.review-grid{
+  display: flexbox;
+  flex-direction: column;
+}
+
+#write-review-here{
+  min-width: 400px;
+  width: 75vw;
+ height: 300px;
 }

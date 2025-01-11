@@ -1,31 +1,27 @@
 <template>
-Email Sent: {{ emailSent }}
 
+<div class="review-grid">
 <form>
     <p>New Review for {{ bookTitle }}</p>
-    <input textarea v-model="review"/>
-    Your Name: <input type="text" v-model="reviewer"/>
-    A Grown-Up's Email: <input type="email" v-model="reviewEmail"/>
+    <input textarea v-model="review" id="write-review-here"/>
+   <p> Your Name: <input type="text" v-model="reviewer"/>
+    A Grown-Up's Email: <input type="email" v-model="reviewEmail"/></p>
 </form>
 
 
-    <button @click="addImage = true">Add an Image</button>
-<div v-if="addImage">
-    <!-- Show image upload section -->
-    <p>Upload Image Section</p>
-    <button v-on:click="upload">Open Upload Widget</button>
+    <button @click="upload">Add an Image</button>
     
-  </div>
+
 
   <!-- Image preview or additional UI can be added here -->
   <div v-if="showPreview" id="submitting-photo-grid">
     <h3>Image Uploaded: </h3>
     <img :src="picUrl" alt="Uploaded Image" id="submitting-photo"/>
-    <p id="submitting-warning">All photos must be reviewed by an admin before posting.</p>
+    <p id="submitting-warning">All photos and reviews must be reviewed by an admin before posting.</p>
 
   </div>
-  <button @click="sendMessage">Send Email</button>
-
+  <button @click="sendMessage">Review Complete</button>
+</div>
 </template>
 
 
@@ -38,8 +34,7 @@ export default {
   data() {
     return {
       emailSent: false,
-        picUrl: '',
-      addImage: false, 
+        picUrl: '', 
       showPreview: false,
       reviewer: '',
       reviewEmail: '',
@@ -71,7 +66,6 @@ export default {
 
     upload() {
       this.myWidget.open();  // Open the Cloudinary upload widget
-      this.addImage = false;
       this.showPreview = true;  // Hide upload form after opening widget
     },
     cancelUpload() {

@@ -41,7 +41,7 @@ export const questionData= [
         question: 'question',
         asker: 'asker',
         answer: 'answer',
-        answerer:'Mr Nate',
+        answerer:'MrNate',
     }, 
 
 
