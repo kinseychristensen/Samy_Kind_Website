@@ -1,16 +1,13 @@
 <template>
-<div>
-this will be the form for sending nate a message, asking a character question, or adding a review.</div>
-
-Email Sent: {{ emailSent }}
-
+<div id="send-message">
 <form>
-    <p>Dear {{answerer}},</p>
-    <input textarea v-model="message"/>
-    Your Name: <input type="text" v-model="fromName"/>
-    A Grown-Up's Email: <input type="email" v-model="fromEmail"/>
+    <p id="greeting">Dear {{answerer}},</p>
+    <input textarea v-model="message" id="message"/>
+    <div id="message-info">Your Name: <input type="text" v-model="fromName"/>
+    A Grown-Up's Email: <input type="email" v-model="fromEmail"/></div>
 </form>
-<button @click="sendMessage">Send Email</button>
+<button @click="sendMessage" id="send-message-button">Send Email</button>
+</div>
 </template>
 
 <script>
