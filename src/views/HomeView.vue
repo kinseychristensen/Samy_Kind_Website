@@ -7,7 +7,11 @@
       created since he was a child. I would like to introduce you to my friends on this website. They have many 
       fun activities that show you what's so great about this website. Meet my friends by clicking on the posters 
       they're holding. If you want to come back to the homepage, click on mine and Lucy's poster."</div>
-      <div class="page-contents"></div>
+      <div class="page-contents">
+        <h2>The Kind Family</h2>
+        <p>Grandpa, Senny, Lucy, Samy, Jimmy, Grandma</p>
+        <img :src="kindFamily" id="kind-family-portrait"/>
+      </div>
 
     </div>
 </template>
@@ -16,7 +20,8 @@ export default {
   data(){
     return {
       samyPic: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736285876/samy_avatar_ciepz3.png',
-  }
+      kindFamily: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736880246/kind_family_boy05k.png',
+}
 }
 }
 </script>

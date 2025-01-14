@@ -8,9 +8,9 @@
     
 
 <div v-for="book in bookData" v-bind:key="book.bookOrder" :value="book.bookOrder">
-    <div v-if="currentBook == book.bookOrder" class="book-grid">
+    <div v-if="currentBook == book.bookOrder" class="book-grid" :style="{backgroundColor: getBackgroundColor(book.bookOrder) }">
     <img :src="book.bookCover" class="full-cover">
-    <h3 class="title-of-book">{{ book.bookTitle }}</h3>
+    <h1 class="title-of-book">{{ book.bookTitle }}</h1>
    <div class="synopsis"> {{ book.description }}</div>
    <a :href="book.amazonLink" class="buy-it" >Buy the Book on Amazon!</a>
 
@@ -47,6 +47,17 @@ export default {
         showReview: false,
         mrNatePic: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736602055/nate_jzvk2g.png',
     }
-}
+}, methods: {
+    getBackgroundColor(bookOrder) {
+        const colors={
+        1: '#add8e6', 
+        2: '#ffb6c1',
+        3: '#ffdbbb',
+        4: '#ffffc5',
+        5: '#d1ffbd',
+    };
+    return colors[bookOrder] || '#ffffff'; // Default color if not mapped
+  },
+    }
 }
 </script>

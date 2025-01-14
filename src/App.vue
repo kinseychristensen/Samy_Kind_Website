@@ -5,17 +5,17 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-   
+    <RouterLink v-bind:to="{ name: 'home' }"  id="mini-screen-home"><img :src="samy"/></RouterLink>
 
       <nav>
         <RouterLink v-bind:to="{ name: 'home' }" class="nav-link"><img :src="samy" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'books' }" class="nav-link"> <img :src="ashley" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'readAlouds' }" class="nav-link"> <img :src="flicker" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'comingSoon' }" class="nav-link"> <img :src="lenise" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'about' }" class="nav-link"> <img :src="spike" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'askSamy' }" class="nav-link"> <img :src="parker" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'forParents' }" class="nav-link"> <img :src="rosella" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'reachOut' }" class="nav-link"> <img :src="stephanie" class="nav-img"/></RouterLink>
+        <RouterLink v-bind:to="{ name: 'books' }" class="nav-link"> <img :src="ashley" class="nav-img"/><a class="nav-button">The Books</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'readAlouds' }" class="nav-link"> <img :src="flicker" class="nav-img"/><a class="nav-button">Read Alouds</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'comingSoon' }" class="nav-link"> <img :src="lenise" class="nav-img"/><a class="nav-button">Coming Soon</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'about' }" class="nav-link"> <img :src="spike" class="nav-img"/><a class="nav-button">About the Author</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'askSamy' }" class="nav-link"> <img :src="parker" class="nav-img"/><a class="nav-button"> Ask Samy</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'forParents' }" class="nav-link"> <img :src="rosella" class="nav-img"/><a class="nav-button">For Parents</a></RouterLink>
+        <RouterLink v-bind:to="{ name: 'reachOut' }" class="nav-link"> <img :src="stephanie" class="nav-img"/><a class="nav-button">Reach Out</a></RouterLink>
       </nav>
 
   </header>
