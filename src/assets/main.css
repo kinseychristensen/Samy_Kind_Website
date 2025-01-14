@@ -164,14 +164,20 @@ margin: auto;
 }
 
 .question{
-  background-color: rgb(255, 252, 196);
+  background-color: rgb(254, 251, 199);
+  border-color: yellow;
+  border-width: 3px;
+  border-style: double;
   border-radius: 20px;
   margin-right: 100px;
   padding: 15px;
 }
 .answer{
-  background-color: rgb(184, 221, 241);
+  background-color: rgb(210, 255, 189);
+  border-color: green;
   border-radius: 20px;
+  border-width: 3px;
+  border-style: double;
   margin-left: 100px;
   padding: 15px;
   display: grid;

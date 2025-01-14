@@ -9,13 +9,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
         <RouterLink v-bind:to="{ name: 'home' }" class="nav-link"><img :src="samy" class="nav-img"/></RouterLink>
+        <RouterLink v-bind:to="{ name: 'books' }" class="nav-link"> <img :src="ashley" class="nav-img"/></RouterLink>
+        <RouterLink v-bind:to="{ name: 'readAlouds' }" class="nav-link"> <img :src="flicker" class="nav-img"/></RouterLink>
+        <RouterLink v-bind:to="{ name: 'comingSoon' }" class="nav-link"> <img :src="lenise" class="nav-img"/></RouterLink>
         <RouterLink v-bind:to="{ name: 'about' }" class="nav-link"> <img :src="spike" class="nav-img"/></RouterLink>
         <RouterLink v-bind:to="{ name: 'askSamy' }" class="nav-link"> <img :src="parker" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'books' }" class="nav-link"> <img :src="ashley" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'comingSoon' }" class="nav-link"> <img :src="lenise" class="nav-img"/></RouterLink>
         <RouterLink v-bind:to="{ name: 'forParents' }" class="nav-link"> <img :src="rosella" class="nav-img"/></RouterLink>
         <RouterLink v-bind:to="{ name: 'reachOut' }" class="nav-link"> <img :src="stephanie" class="nav-img"/></RouterLink>
-        <RouterLink v-bind:to="{ name: 'readAlouds' }" class="nav-link"> <img :src="flicker" class="nav-img"/></RouterLink>
       </nav>
 
   </header>
