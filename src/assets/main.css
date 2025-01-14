@@ -33,6 +33,12 @@ nav{
   gap: 3px;
   padding: 10px;
   overflow: hidden;
+  border-bottom: 20px;
+  border-color: #fd0100;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .nav-link{
   display: block;
@@ -48,9 +54,7 @@ nav{
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-.nav-link img:hover {
-  transform: scale(1.2);
-}
+
 
 .avatar{
   border-radius: 50%;
@@ -331,4 +335,21 @@ margin: auto;
   min-width: 400px;
   width: 75vw;
  height: 300px;
+}
+
+.link-as-button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: larger;
+  background-color:aqua;
+  border-radius: 15px;
+  border-color: antiquewhite;
 }

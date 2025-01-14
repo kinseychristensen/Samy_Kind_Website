@@ -27,14 +27,14 @@ import { RouterLink, RouterView } from 'vue-router'
 export default {
   data(){
     return {
-      spike: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736347836/spike_poster_text_r5rcuj.png',
-      samy: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736347837/samy_poster_text_uiw4vj.png',
-      rosella: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736348054/rosella_poster_text_a1tutm.png',
-      ashley: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736347835/ashley_poster_text_aagz5c.png',
-      parker: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736602052/parker_poster_text_g0sz4m.png',
-      lenise: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736347836/lenise_poster_text_zbjgvt.png',
-      stephanie: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736347836/stephanie_poster_text_gsoog1.png',
-      flicker: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736348640/flicker_poster_text_hmzj7n.png',
+      spike: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826940/spike_poster_red_tddcd3.png',
+      samy: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826944/samy_poster_red_zea92m.png',
+      rosella: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826938/rosella_poster_red_folp97.png',
+      ashley: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826943/ashley_poster_red_disy7j.png',
+      parker: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826939/parker_poster_red_xj9wzw.png',
+      lenise: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826941/lenise_poster_red_g2lroh.png',
+      stephanie: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826937/stephanie_poster_red_gpobrv.png',
+      flicker: 'https://res.cloudinary.com/dthgudawp/image/upload/v1736826942/flicker_poster_red_eruugc.png',
 
 
     }

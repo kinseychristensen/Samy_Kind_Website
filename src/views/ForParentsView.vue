@@ -10,7 +10,9 @@
         even teach them about the lessons we've learned and how they can imply in the long run of life.”
         </div>
 <div class="page-contents">
-      This area is currently under construction!  Check back again soon.
+    <a href="https://drive.google.com/drive/folders/1zt-fyN8UkTFzFVCOaEymrBrxD6Vwajd0?usp=sharing" class="link-as-button">Coloring Pages</a>
+
+
     </div>
   </div>
   </template>
