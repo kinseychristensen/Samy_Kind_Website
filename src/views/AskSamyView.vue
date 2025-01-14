@@ -8,8 +8,8 @@
         answer to each other. If you have any questions to ask Samy, ask them right away, because he 
         will answer them very soon.” 
       <p></p>
-      <button @click="choice = 1">Ask a Question!</button>
-      <button @click="choice = 2">See Answers from Samy and his Friends</button></div>
+      <button @click="choice = 1" class="link-as-button">Ask a Question!</button>
+      <button @click="choice = 2" class="link-as-button">See Answers from Samy and his Friends</button></div>
 
 <div class="page-contents">
 
@@ -51,7 +51,7 @@
     return {
       answerer: 'Samy',
      characterPics,
-     characters: ['Samy', 'Parker', 'Flicker', 'Spike', 'Ashley', 'Lenise', 'Stephanie', 'Rosella', 'MrNate'
+     characters: ['Samy', 'Parker', 'Flicker', 'Spike', 'Ashley', 'Lenise', 'Stephanie', 'Rosella', 'Evan', 'Lucy', 'Murty', 'StellaRose', 'MrNate'
      ],
       choice: 0,
       parkerPic: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736602040/parker_avatar_fl6nxm.png',

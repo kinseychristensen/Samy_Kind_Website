@@ -21,6 +21,7 @@
 
   </div>
   <button @click="sendMessage">Review Complete</button>
+  <h1 v-if="emailSent">Your review will be posted to our website soon! Thank you!</h1>
 </div>
 </template>
 
@@ -60,6 +61,11 @@ export default {
          console.log('Failed to send email:', error)
       })   
          this.emailSent = true;
+         this.showPreview = false;
+         this.reviewer = '';
+         this.review = '';
+         this.picUrl = '';
+         this.reviewEmail = '';
 
      },
 

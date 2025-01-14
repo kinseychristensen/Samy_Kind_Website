@@ -12,14 +12,16 @@
     <img :src="book.bookCover" class="full-cover">
     <h1 class="title-of-book">{{ book.bookTitle }}</h1>
    <div class="synopsis"> {{ book.description }}</div>
-   <a :href="book.amazonLink" class="buy-it" >Buy the Book on Amazon!</a>
+   <a :href="book.amazonLink" class="buy-it">Buy the Book on Amazon!</a>
 
     <div class="nate-notes"><img :src="mrNatePic" class="avatar" id="about-image"/>{{ book.nateNotes }}</div>
     <h3 class="reviews-title">Reviews</h3>
     <div class="review-flex">
     <div v-for="review in book.reviews" :key="review.id" class="indiv-review">
         <p>{{ review.review }}</p>
-        <p class="reviewer"> - {{ review.reviewer }}</p></div>
+        <p class="reviewer"> - {{ review.reviewer }}</p>
+    <img :src="review.picUrl" class="review-pic" v-if="review.picUrl != ''"/>
+</div>
     </div>
 
     <button @click="showReview = true" class="send-review">Write a Review</button>

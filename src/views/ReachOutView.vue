@@ -12,7 +12,9 @@ to Mr. Nate about how much your kids love the books and how it has changed your 
 to the next Samy Kind adventure."
 </div>
 <div class="page-contents">
-      links to amazon youtube and email
+      <a href="https://www.amazon.com/dp/B0CB97224P?binding=kindle_edition&ref_=dbs_s_ks_series_rwt_tkin&qid=1736888488&sr=1-4" class="link-as-button">Amazon Shop</a>
+      <a href="https://www.youtube.com/@Mr.Nate132" class="link-as-button">Youtube Channel</a>
+      <a href="https://www.facebook.com/share/g/18Y2C4TBFe/" class="link-as-button">Facebook Group</a>
   
     <SendMessage :answerer="answerer"/>
  </div>

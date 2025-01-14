@@ -7,5 +7,10 @@ export const characterPics= {
     Lenise: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736285903/lenise_avatar_dkv7up.png',
     Stephanie: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736346271/stephanie_avatar_ifqodc.png',
     Rosella: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736285903/Rosella_Avatar_s5nzt0.png',
+    Evan: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736828016/evan_l7czdk.png',
+    Lucy: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736828015/lucy_sgo3zm.png',
+    Murty: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736828019/murty_max6r8.png',
+    StellaRose: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736828018/stella_br3vfw.png',
     MrNate: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736602055/nate_jzvk2g.png',
+
 }

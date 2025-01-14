@@ -20,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   </header>
 
-  <RouterView />
+  <RouterView id="main-view"/>
 </template>
 <script>
 
@@ -43,6 +43,6 @@ export default {
 
 </script>
 
-<style scoped>
 
-</style>
+
+

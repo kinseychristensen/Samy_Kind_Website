@@ -25,12 +25,17 @@
         projects during grade school. Throughout all the years, I have been practicing and learning how to make these pictures for my books. 
         Today, I use my iPad and Apple Pencil to draw the illustrations. It helps children to know what's going on in the books and make it very exciting.
        </p> 
+       <ArtGallery/>
       </div>
     </div>
   </div>
 </template>
 <script>
+import ArtGallery from '@/components/ArtGallery.vue';
 export default {
+  components: {
+    ArtGallery,
+},
   data(){
     return {
       spikePic: 'https://res.cloudinary.com/dthgudawp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736285914/spike_avatar_qocxmg.png',

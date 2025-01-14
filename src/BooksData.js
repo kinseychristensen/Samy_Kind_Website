@@ -9,17 +9,20 @@ export const bookData= [
         reviews: [
             {id: 0,
                 reviewer: 'name1',
-             review: 'here is my review1',
+             review: 'here is my review1.  it is really long.  i want it to wrap.  this is my review.  it is really long.  i want it to wrap.  i am testing the confines of the flexbox to see if it loops and wraps correctly. it needs to still be longer cuz i have to make sure it wraps',
+             picUrl: 'http://res.cloudinary.com/dthgudawp/image/upload/v1736884977/erqzpicrtqrxv4yyxnkv.png',
             },
 
             {id: 1,
                 reviewer: 'name2',
             review: 'here is my review2',
+            picUrl: '',
             },
             
             {   id: 2,
                 reviewer: 'name3',
             review: 'here is my review3',
+            picUrl: '',
             },   
 
         ]
@@ -37,16 +40,19 @@ export const bookData= [
                 {   id: 0,
                     reviewer: 'name',
              review: 'here is my review',
+             picUrl: '',
             },
 
             { id: 1,
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },
             
             {   id: 2,
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },   
 
         ]
@@ -64,16 +70,19 @@ export const bookData= [
             {   id: 0,
                 reviewer: 'name',
              review: 'here is my review',
+             picUrl: '',
             },
 
             {   id: 1,
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },
             
             {   id: 2,
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },   
 
         ]
@@ -90,16 +99,19 @@ export const bookData= [
             {   id: 0,
                 reviewer: 'name',
              review: 'here is my review',
+             picUrl: '',
             },
 
             {   id: 1,
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },
             
             {   id: 2, 
                 reviewer: 'name',
             review: 'here is my review',
+            picUrl: '',
             },   
 
         ]

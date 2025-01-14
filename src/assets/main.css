@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: large;
+body{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
 }
+
 
 h1{
   color: #fd0100
@@ -30,6 +32,9 @@ button {
   border-radius: 15px;
   background-color: #fd0100;
   border-color: antiquewhite;
+}
+button:hover {
+  background-color: #0056b3;
 }
 
 nav {
@@ -91,11 +96,13 @@ nav {
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-areas: 
-  " . title"
+  "avatar title"
   "avatar intro"
   ". intro"
   "contents contents"
   ;
+  margin-top: 15px;
+  max-width: 90vw;
 }
 .page-title{
   grid-area: title;
@@ -117,6 +124,11 @@ nav {
   line-height: 1.6;
   font-size: 16px;
   padding: 20px;
+  border: solid black 2px;
+  border-radius: 25px;
+  width: 75vw;
+  margin: auto;
+  margin-top: 15px;
 
 }
 #about-image{
@@ -318,7 +330,7 @@ margin: auto;
   font-size: larger;
   background-color:#fd0100;
   border-radius: 15px;
-  border-color: antiquewhite;
+
 }
 .buy-it:hover {
   background-color: #0056b3;
@@ -353,14 +365,22 @@ margin: auto;
  padding: 15px;
  margin: 5px;
  border-radius: 25px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 .reviewer{
   margin-left: 300px;
 }
 
-.review-grid{
-  display: flexbox;
-  flex-direction: column;
+
+.review-pic{
+  width: 600px;
+  max-width: 75vw;
+  height: auto;
+  padding: 15px;
+  border: solid, black, 2px;
+  align-self: center;
 }
 
 #write-review-here{
@@ -369,7 +389,46 @@ margin: auto;
  height: 300px;
 }
 
-.link-as-button{
+
+
+
+#kind-family-portrait{
+  margin: auto;
+  width: 80vw;
+  max-width: 700px;
+  border-radius: 25px;
+  
+}
+
+#read-aloud-flex{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  border: solid black 2px;
+  border-radius: 25px;
+  width: 75vw;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.art-gallery{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.art-gallery-img{
+  width: 700px;
+  max-width: 75vw;
+}
+
+.link-as-button {
+  all: unset;
+  margin: 5px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -381,29 +440,20 @@ margin: auto;
   min-width: 100px;
   min-height: 40px;
   font-size: larger;
-  background-color:aqua;
   border-radius: 15px;
+  background-color: #fd0100;
   border-color: antiquewhite;
 }
-
-#kind-family-portrait{
-  margin: auto;
-  width: 80vw;
-  max-width: 700px;
-  border-radius: 25px;
-  
+.link-as-button:hover {
+  background-color: #0056b3;
 }
 
-
-
-
-
-
-
-
-
-
-
+.nunito {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 52;
+  font-style: normal;
+}
 
 
 
@@ -473,4 +523,32 @@ margin: auto;
 
 }
 
+.book-grid{
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title"
+  "synopsis"
+  "cover"
+  "buy-it"
+  "nate-notes"
+  "reviews-title"
+  "reviews"
+  "send-review"
+  "new"
+  ;
+}
+
+
+
+
+
+
+
+
+}
+#app {
+  width: 1280px;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
 }
