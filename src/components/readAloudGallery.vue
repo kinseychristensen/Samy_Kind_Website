@@ -4,7 +4,7 @@
         <iframe width="560" height="315" :src="videos[currentVid].vidUrl" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <button @click="nextVideo">Next Video</button>
+        <button @click="nextVideo" id="next-vid-button">Next Video</button>
         
     </div>
 </template>

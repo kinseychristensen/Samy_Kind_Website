@@ -8,22 +8,17 @@ export const bookData= [
         nateNotes:'I wrote this book because I have been taught that a lot of us face hard times that happen unexpectedly. Sometimes, when facing the challenges of life, we can either feel upset or sad, but that does not mean your life is not good. I lost my grandma when I was twelve and thought that as a child, I was to blame. But family members kept telling me it was just part of life and that the death of someone you truly love is not something to take responsibility for. I was even unaware about the five stages of grief as a child, but after my mom taught me about it, I thought it could be a good lesson and pattern for children to know that going through grief is part of life, but it does not have to be in your life all the time, because when it comes to being at the last stage of grief, you become happier before you know it.',
         reviews: [
             {id: 0,
-                reviewer: 'name1',
-             review: 'here is my review1.  it is really long.  i want it to wrap.  this is my review.  it is really long.  i want it to wrap.  i am testing the confines of the flexbox to see if it loops and wraps correctly. it needs to still be longer cuz i have to make sure it wraps',
-             picUrl: 'http://res.cloudinary.com/dthgudawp/image/upload/v1736884977/erqzpicrtqrxv4yyxnkv.png',
+                reviewer: 'Mom of 12',
+             review: 'I really enjoyed all of the first four Samy Kind books!  My favorite is the first one.  Mr Nate handles the stages of grief so well.  I can\'t wait to see what he comes up with next.',
+             picUrl: '',
             },
 
             {id: 1,
-                reviewer: 'name2',
-            review: 'here is my review2',
+                reviewer: 'Kinsey',
+            review: 'This is a very cool approach to the start of a children book series.  Seeing Samy Kind handle huge emotional changes and having an unperfect main character is great.  I am excited to see where this series goes!  Also the art is so fun.',
             picUrl: '',
             },
             
-            {   id: 2,
-                reviewer: 'name3',
-            review: 'here is my review3',
-            picUrl: '',
-            },   
 
         ]
     }, 
@@ -38,22 +33,11 @@ export const bookData= [
             reviews: [
             
                 {   id: 0,
-                    reviewer: 'name',
-             review: 'here is my review',
+                    reviewer: 'Kinsey',
+             review: 'Poor Samy!  Learning to navigate life is tough for a kid: even tougher when dealing with unreciprocated feelings!  I am glad his grandma has his back.',
              picUrl: '',
             },
 
-            { id: 1,
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },
-            
-            {   id: 2,
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },   
 
         ]
     }, 
@@ -68,22 +52,11 @@ export const bookData= [
 
         reviews: [
             {   id: 0,
-                reviewer: 'name',
-             review: 'here is my review',
+                reviewer: 'Kinsey',
+             review: 'Sensory issues really can ruin your day.  I liked the character of Evan.  I wish we had seen a little more interactions with Samy\'s class and the rest of the cluster class.  Hopefully we see them more in a future book!',
              picUrl: '',
             },
 
-            {   id: 1,
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },
-            
-            {   id: 2,
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },   
 
         ]
     }, 
@@ -96,23 +69,6 @@ export const bookData= [
         description: 'This book is about Samy and his friends forming a club for showing kindness to others. They end up going on a summer camping trip where they learn to not only show kindness to other people, but they also show it to animals as well.',
         nateNotes:'I wrote this book as a way of reminding children to always be kind to animals both wild and domestic. I also thought of it as one of the adventures that I had done at camp while I was in Boy Scouts. None of them ever involved encountering animal rescue missions, but they involved respecting the animals and the environment. And of course, as a child, I had a dog, but I was a little rusty with being patient and knowing how to take care of a dog. So after growing up and learning how to be patient and more responsible, I thought children ought to know about how it is important to show kindness to animals, because animals have feelings, just like humans do.',
         reviews: [
-            {   id: 0,
-                reviewer: 'name',
-             review: 'here is my review',
-             picUrl: '',
-            },
-
-            {   id: 1,
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },
-            
-            {   id: 2, 
-                reviewer: 'name',
-            review: 'here is my review',
-            picUrl: '',
-            },   
 
         ]
     }, 
